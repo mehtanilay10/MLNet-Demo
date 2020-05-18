@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.ML" Version="1.5.0-preview2" />
+    <PackageReference Include="Microsoft.ML" Version="1.5.0-preview2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="MLModels\SalaryPredictModel.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

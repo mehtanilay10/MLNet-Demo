@@ -1,0 +1,34 @@
+ - ML.NET Model Builder
+https://marketplace.visualstudio.com/items?itemName=MLNET.07
+
+ - Expressions
+https://docs.microsoft.com/en-us/dotnet/api/microsoft.ml.transforms.expressionestimator
+
+ - Evalute Metrics
+https://docs.microsoft.com/en-us/dotnet/machine-learning/resources/metrics
+
+ - ML.Net CLI
+https://docs.microsoft.com/en-us/dotnet/machine-learning/reference/ml-net-cli-reference#test-dataset
+
+
+
+
+ - ML.Net docs
+https://docs.microsoft.com/en-us/dotnet/machine-learning/
+
+ - ML.Net SDK/API 
+https://docs.microsoft.com/en-us/dotnet/api/?view=ml-dotnet
+
+ - ML.Net Samples
+https://github.com/dotnet/machinelearning-samples
+
+
+
+
+ML.Net CLI commands
+################################################
+
+dotnet tool install -g mlnet
+mlnet auto-train --task regression --dataset "..\train-dataset.csv" --label-column-name Salary --verbosity diag
+mlnet auto-train --task regression --dataset "..\train-dataset.csv" --label-column-index 1 --has-header false --verbosity diag
+mlnet auto-train --task regression --dataset "..\train-dataset.csv" --label-column-index 1 --has-header false --max-exploration-time 180 --verbosity diag
